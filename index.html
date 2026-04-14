@@ -8,6 +8,8 @@
     <style>
         body { background-color: #0a0a0a; color: #ededed; }
         .accent-border { border-left: 4px solid #3b82f6; }
+        .status-pulse { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
         input, textarea { background: #18181b !important; border: 1px solid #3f3f46 !important; color: white !important; }
     </style>
 </head>
@@ -15,16 +17,37 @@
     <nav class="p-6 border-b border-gray-800">
         <div class="max-w-5xl mx-auto flex justify-between items-center">
             <h1 class="text-xl font-bold tracking-tighter text-blue-500">NOMADIK_SYSTEMS</h1>
-            <div class="text-sm text-gray-400 font-mono">[ STATUS: OPERATIONAL ]</div>
+            <div class="text-sm text-gray-400 font-mono flex items-center gap-2">
+                <span class="h-2 w-2 bg-green-500 rounded-full status-pulse"></span>
+                [ STATUS: OPERATIONAL ]
+            </div>
         </div>
     </nav>
 
     <main class="max-w-5xl mx-auto px-6 py-20">
         <section class="mb-16">
             <h2 class="text-5xl font-extrabold mb-6 tracking-tight">Autonomous Infrastructure & Lead Generation.</h2>
-            <p class="text-xl text-gray-400 max-w-2xl mb-8">
+            <p class="text-xl text-gray-400 max-w-2xl">
                 Building scalable automation pipelines and AI-driven systems. We replace manual bottlenecks with reliable mechanisms.
             </p>
+        </section>
+
+        <section class="mb-20">
+            <h3 class="text-sm font-mono text-blue-500 mb-4 uppercase tracking-widest">// RECENT_DEPLOYMENTS</h3>
+            <div class="grid gap-4 font-mono text-sm">
+                <div class="p-4 border border-gray-800 bg-zinc-900/20 flex justify-between items-center">
+                    <span>> PERMIT_HUNTER_V2 (Live Scraping)</span>
+                    <span class="text-green-500">[ COMPLETED ]</span>
+                </div>
+                <div class="p-4 border border-gray-800 bg-zinc-900/20 flex justify-between items-center">
+                    <span>> RECEPTIONIST_AI (Voice Integration)</span>
+                    <span class="text-blue-400">[ OPTIMIZING ]</span>
+                </div>
+                <div class="p-4 border border-gray-800 bg-zinc-900/20 flex justify-between items-center">
+                    <span>> NOMADIK_CORE (Lead Distribution)</span>
+                    <span class="text-yellow-500">[ SCALING ]</span>
+                </div>
+            </div>
         </section>
 
         <section id="contact" class="mb-20">
