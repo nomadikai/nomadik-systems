@@ -8,6 +8,7 @@
     <style>
         body { background-color: #0a0a0a; color: #ededed; }
         .accent-border { border-left: 4px solid #3b82f6; }
+        input, textarea { background: #18181b !important; border: 1px solid #3f3f46 !important; color: white !important; }
     </style>
 </head>
 <body class="font-sans antialiased">
@@ -24,9 +25,28 @@
             <p class="text-xl text-gray-400 max-w-2xl mb-8">
                 Building scalable automation pipelines and AI-driven systems. We replace manual bottlenecks with reliable mechanisms.
             </p>
-            <div class="flex gap-4">
-                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded font-bold transition">Deploy a Project</a>
-                <a href="#systems" class="border border-gray-700 hover:bg-gray-800 px-6 py-3 rounded font-bold transition">View Systems</a>
+        </section>
+
+        <section id="contact" class="mb-20">
+            <div class="bg-zinc-900/30 border border-gray-800 p-8 rounded-lg max-w-2xl">
+                <h3 class="text-2xl font-bold mb-4">Initialize Project</h3>
+                <form action="https://formspree.io/f/mqakpopy" method="POST" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-mono text-gray-500 mb-1">IDENTIFIER (NAME)</label>
+                        <input type="text" name="name" required class="w-full p-3 rounded focus:outline-none focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-mono text-gray-500 mb-1">COMM_CHANNEL (EMAIL)</label>
+                        <input type="email" name="_replyto" required class="w-full p-3 rounded focus:outline-none focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-mono text-gray-500 mb-1">OBJECTIVE (MESSAGE)</label>
+                        <textarea name="message" rows="4" required class="w-full p-3 rounded focus:outline-none focus:border-blue-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded transition">
+                        TRANSMIT SIGNAL
+                    </button>
+                </form>
             </div>
         </section>
 
@@ -37,7 +57,7 @@
             </div>
             <div class="p-6 border border-gray-800 rounded bg-zinc-900/50 accent-border">
                 <h3 class="text-lg font-bold mb-2">AI Automation</h3>
-                <p class="text-sm text-gray-400">Autonomous receptionist and workflow orchestration via Temporal & Go.</p>
+                <p class="text-sm text-gray-400">Autonomous receptionist and workflow orchestration.</p>
             </div>
             <div class="p-6 border border-gray-800 rounded bg-zinc-900/50 accent-border">
                 <h3 class="text-lg font-bold mb-2">Repair & Audit</h3>
@@ -46,8 +66,8 @@
         </div>
     </main>
 
-    <footer class="max-w-5xl mx-auto px-6 py-10 border-t border-gray-800 text-gray-500 text-sm font-mono">
-        &copy; 2026 NOMADIK SYSTEMS // DENVER_CO
+    <footer class="max-w-5xl mx-auto px-6 py-10 border-t border-gray-800 text-gray-500 text-sm font-mono uppercase">
+        &copy; 2026 NOMADIK SYSTEMS // DENVER_CO // ENCRYPTED_STALKER_PREVENTION_ENABLED
     </footer>
 </body>
 </html>
