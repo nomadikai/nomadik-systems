@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomadik Systems | Autonomous Infrastructure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0a0a0a; color: #ededed; }
+        .accent-border { border-left: 4px solid #3b82f6; }
+        .status-pulse { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
+        input, textarea { background: #18181b !important; border: 1px solid #3f3f46 !important; color: white !important; }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <nav class="p-6 border-b border-gray-800">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-tighter text-blue-500">NOMADIK_SYSTEMS</h1>
+            <div class="text-sm text-gray-400 font-mono flex items-center gap-2">
+                <span class="h-2 w-2 bg-green-500 rounded-full status-pulse"></span>
+                [ STATUS: OPERATIONAL ]
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6 py-20">
+        <section class="mb-16">
+            <h2 class="text-5xl font-extrabold mb-6 tracking-tight">Autonomous Infrastructure & Lead Generation.</h2>
+            <p class="text-xl text-gray-400 max-w-2xl">
+                Building scalable automation pipelines and AI-driven systems. We replace manual bottlenecks with reliable mechanisms.
+            </p>
+        </section>
+
+        <section class="mb-20">
+            <h3 class="text-sm font-mono text-blue-500 mb-4 uppercase tracking-widest">// RECENT_DEPLOYMENTS</h3>
+            <div class="grid gap-4 font-mono text-sm">
+                <div class="p-4 border border-gray-800 bg-zinc-900/20 flex justify-between items-center">
+                    <span>> PERMIT_HUNTER_V2 (Live Scraping)</span>
+                    <span class="text-green-500">[ COMPLETED ]</span>
+                </div>
+                <div class="p-4 border border-gray-800 bg-zinc-900/20 flex justify-between items-center">
+                    <span>> RECEPTIONIST_AI (Voice Integration)</span>
+                    <span class="text-blue-400">[ OPTIMIZING ]</span>
+                </div>
+                <div class="p-4 border border-gray-800 bg-zinc-900/20 flex justify-between items-center">
+                    <span>> NOMADIK_CORE (Lead Distribution)</span>
+                    <span class="text-yellow-500">[ SCALING ]</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-20">
+            <div class="bg-zinc-900/30 border border-gray-800 p-8 rounded-lg max-w-2xl">
+                <h3 class="text-2xl font-bold mb-4">Initialize Project</h3>
+                <form action="https://formspree.io/f/mvzdgbzw" method="POST" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-mono text-gray-500 mb-1">IDENTIFIER (NAME)</label>
+                        <input type="text" name="name" required class="w-full p-3 rounded focus:outline-none focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-mono text-gray-500 mb-1">COMM_CHANNEL (EMAIL)</label>
+                        <input type="email" name="_replyto" required class="w-full p-3 rounded focus:outline-none focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-mono text-gray-500 mb-1">OBJECTIVE (MESSAGE)</label>
+                        <textarea name="message" rows="4" required class="w-full p-3 rounded focus:outline-none focus:border-blue-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded transition">
+                        TRANSMIT SIGNAL
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <div class="grid md:grid-cols-3 gap-8" id="systems">
+            <div class="p-6 border border-gray-800 rounded bg-zinc-900/50 accent-border">
+                <h3 class="text-lg font-bold mb-2">Lead Pipelines</h3>
+                <p class="text-sm text-gray-400">High-speed scraping and enrichment engines for immediate outreach.</p>
+            </div>
+            <div class="p-6 border border-gray-800 rounded bg-zinc-900/50 accent-border">
+                <h3 class="text-lg font-bold mb-2">AI Automation</h3>
+                <p class="text-sm text-gray-400">Autonomous receptionist and workflow orchestration.</p>
+            </div>
+            <div class="p-6 border border-gray-800 rounded bg-zinc-900/50 accent-border">
+                <h3 class="text-lg font-bold mb-2">Repair & Audit</h3>
+                <p class="text-sm text-gray-400">System administration and technical infrastructure security audits.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="max-w-5xl mx-auto px-6 py-10 border-t border-gray-800 text-gray-500 text-sm font-mono uppercase">
+        &copy; 2026 NOMADIK SYSTEMS // DENVER_CO // ENCRYPTED_STALKER_PREVENTION_ENABLED
+    </footer>
+</body>
+</html>

@@ -1,0 +1,10 @@
+tunnel: d705470a-cb55-45ce-91a3-9baf851fd174
+credentials-file: /home/nomadik/.cloudflared/d705470a-cb55-45ce-91a3-9baf851fd174.json
+protocol: http2
+
+ingress:
+  - hostname: c2.nomadik.site
+    service: http://localhost:8000
+  - hostname: leads.nomadik.site
+    service: http://localhost:8501
+  - service: http_status:404

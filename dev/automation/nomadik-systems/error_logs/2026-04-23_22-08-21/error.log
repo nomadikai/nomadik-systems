@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/nomadik/.local/lib/python3.11/site-packages/botasaurus/browser_decorator.py", line 199, in run_task
+    result = func(driver, data)
+             ^^^^^^^^^^^^^^^^^^
+  File "/home/nomadik/dev/automation/nomadik-systems/trades/market_hunter.py", line 12, in get_market_leads
+    driver.wait_for_element('div[role="article"]')
+  File "/home/nomadik/.local/lib/python3.11/site-packages/botasaurus_driver/driver.py", line 1246, in wait_for_element
+    return self._make_element(self._tab.wait_for(selector, timeout=wait))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/nomadik/.local/lib/python3.11/site-packages/botasaurus_driver/core/tab.py", line 1317, in wait_for
+    raise ElementWithSelectorNotFoundException(selector)
+botasaurus_driver.exceptions.ElementWithSelectorNotFoundException: Cannot find element with selector: 'div[role="article"]'.
