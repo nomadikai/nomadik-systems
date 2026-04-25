@@ -3,94 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nomadik Systems | Autonomous Infrastructure</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>NOMADIK SYSTEMS | Lead Architect</title>
     <style>
-        body { background-color: #0a0a0a; color: #ededed; }
-        .accent-border { border-left: 4px solid #3b82f6; }
-        .status-pulse { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
-        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .5; } }
-        input, textarea { background: #18181b !important; border: 1px solid #3f3f46 !important; color: white !important; }
+        :root { --gold: #d4af37; --black: #0a0a0a; --gray: #1a1a1a; --text: #e0e0e0; }
+        body { background-color: var(--black); color: var(--text); font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        .card { background: var(--gray); border: 1px solid var(--gold); padding: 40px; border-radius: 2px; max-width: 600px; width: 90%; box-shadow: 0 20px 50px rgba(0,0,0,0.5); text-align: center; }
+        .logo-placeholder { width: 80px; height: 80px; border: 2px solid var(--gold); margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; color: var(--gold); font-weight: bold; letter-spacing: 2px; }
+        h1 { color: var(--gold); letter-spacing: 4px; font-weight: 200; text-transform: uppercase; margin-bottom: 10px; font-size: 1.5rem; }
+        p { color: #888; line-height: 1.8; font-size: 0.9rem; margin-bottom: 30px; }
+        .status-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; border-top: 1px solid #333; padding-top: 30px; }
+        .stat-item { text-align: left; }
+        .label { font-size: 0.7rem; text-transform: uppercase; color: var(--gold); letter-spacing: 1px; }
+        .value { font-size: 0.8rem; color: #fff; margin-top: 5px; }
+        .btn { display: inline-block; margin-top: 40px; padding: 12px 30px; border: 1px solid var(--gold); color: var(--gold); text-decoration: none; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 2px; transition: 0.3s; }
+        .btn:hover { background: var(--gold); color: var(--black); }
     </style>
 </head>
-<body class="font-sans antialiased">
-    <nav class="p-6 border-b border-gray-800">
-        <div class="max-w-5xl mx-auto flex justify-between items-center">
-            <h1 class="text-xl font-bold tracking-tighter text-blue-500">NOMADIK_SYSTEMS</h1>
-            <div class="text-sm text-gray-400 font-mono flex items-center gap-2">
-                <span class="h-2 w-2 bg-green-500 rounded-full status-pulse"></span>
-                [ STATUS: OPERATIONAL ]
+<body>
+    <div class="card">
+        <div class="logo-placeholder">NS</div>
+        <h1>Nomadik Systems</h1>
+        <p>Bespoke Automation Infrastructure & High-Performance Data Architecture for the Modern Enterprise.</p>
+        
+        <div class="status-grid">
+            <div class="stat-item">
+                <div class="label">Shield Module</div>
+                <div class="value">Lead Acquisition Active</div>
+            </div>
+            <div class="stat-item">
+                <div class="label">Intel Engine</div>
+                <div class="value">Municipal Pipeline Live</div>
+            </div>
+            <div class="stat-item">
+                <div class="label">System Status</div>
+                <div class="value" style="color: #3fb950;">Operational</div>
+            </div>
+            <div class="stat-item">
+                <div class="label">Architect</div>
+                <div class="value">K. Vandenbos</div>
             </div>
         </div>
-    </nav>
 
-    <main class="max-w-5xl mx-auto px-6 py-20">
-        <section class="mb-16">
-            <h2 class="text-5xl font-extrabold mb-6 tracking-tight">Autonomous Infrastructure & Lead Generation.</h2>
-            <p class="text-xl text-gray-400 max-w-2xl">
-                Building scalable automation pipelines and AI-driven systems. We replace manual bottlenecks with reliable mechanisms.
-            </p>
-        </section>
-
-        <section class="mb-20">
-            <h3 class="text-sm font-mono text-blue-500 mb-4 uppercase tracking-widest">// RECENT_DEPLOYMENTS</h3>
-            <div class="grid gap-4 font-mono text-sm">
-                <div class="p-4 border border-gray-800 bg-zinc-900/20 flex justify-between items-center">
-                    <span>> PERMIT_HUNTER_V2 (Live Scraping)</span>
-                    <span class="text-green-500">[ COMPLETED ]</span>
-                </div>
-                <div class="p-4 border border-gray-800 bg-zinc-900/20 flex justify-between items-center">
-                    <span>> RECEPTIONIST_AI (Voice Integration)</span>
-                    <span class="text-blue-400">[ OPTIMIZING ]</span>
-                </div>
-                <div class="p-4 border border-gray-800 bg-zinc-900/20 flex justify-between items-center">
-                    <span>> NOMADIK_CORE (Lead Distribution)</span>
-                    <span class="text-yellow-500">[ SCALING ]</span>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="mb-20">
-            <div class="bg-zinc-900/30 border border-gray-800 p-8 rounded-lg max-w-2xl">
-                <h3 class="text-2xl font-bold mb-4">Initialize Project</h3>
-                <form action="https://formspree.io/f/mvzdgbzw" method="POST" class="space-y-4">
-                    <div>
-                        <label class="block text-sm font-mono text-gray-500 mb-1">IDENTIFIER (NAME)</label>
-                        <input type="text" name="name" required class="w-full p-3 rounded focus:outline-none focus:border-blue-500">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-mono text-gray-500 mb-1">COMM_CHANNEL (EMAIL)</label>
-                        <input type="email" name="_replyto" required class="w-full p-3 rounded focus:outline-none focus:border-blue-500">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-mono text-gray-500 mb-1">OBJECTIVE (MESSAGE)</label>
-                        <textarea name="message" rows="4" required class="w-full p-3 rounded focus:outline-none focus:border-blue-500"></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded transition">
-                        TRANSMIT SIGNAL
-                    </button>
-                </form>
-            </div>
-        </section>
-
-        <div class="grid md:grid-cols-3 gap-8" id="systems">
-            <div class="p-6 border border-gray-800 rounded bg-zinc-900/50 accent-border">
-                <h3 class="text-lg font-bold mb-2">Lead Pipelines</h3>
-                <p class="text-sm text-gray-400">High-speed scraping and enrichment engines for immediate outreach.</p>
-            </div>
-            <div class="p-6 border border-gray-800 rounded bg-zinc-900/50 accent-border">
-                <h3 class="text-lg font-bold mb-2">AI Automation</h3>
-                <p class="text-sm text-gray-400">Autonomous receptionist and workflow orchestration.</p>
-            </div>
-            <div class="p-6 border border-gray-800 rounded bg-zinc-900/50 accent-border">
-                <h3 class="text-lg font-bold mb-2">Repair & Audit</h3>
-                <p class="text-sm text-gray-400">System administration and technical infrastructure security audits.</p>
-            </div>
-        </div>
-    </main>
-
-    <footer class="max-w-5xl mx-auto px-6 py-10 border-t border-gray-800 text-gray-500 text-sm font-mono uppercase">
-        &copy; 2026 NOMADIK SYSTEMS // DENVER_CO // ENCRYPTED_STALKER_PREVENTION_ENABLED
-    </footer>
+        <a href="mailto:kalen@nomadik.site" class="btn">Request Access</a>
+    </div>
 </body>
 </html>
